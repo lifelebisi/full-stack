@@ -6,10 +6,10 @@ const port = 3001;
 app.use(express.json());
 
 
-const learnersRoutes = require('./routes/learners');
+const learnersRoutes = require('./routes/departments');
 
 
-app.use('/learners', learnersRoutes);
+app.use('/departments', departmentsRoutes);
 
 
 app.listen(port, () => {

@@ -9,7 +9,7 @@ app.post ("/", (req ,res)  => {
         office_phone
        } = req.body;
 
-   con.query('INSET INTO department(department_id , name ,department_position ,office_phone) VALUES (?,?,?,?)',
+   con.query('INSET INTO departments(department_id , name ,department_position ,office_phone) VALUES (?,?,?,?)',
    [department_id , name ,department_position ,office_phone],
    (err,results) => {
     if (err){
